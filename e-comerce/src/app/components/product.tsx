@@ -4,7 +4,7 @@
 
 import React from 'react'
 import { ProductType } from '@/types/ProductType'
-import ProductImage from './productimage'
+import ProductImage from './Productimage'
 import { formatPrice } from '@/lib/utils'
 
 
@@ -14,7 +14,7 @@ type Productprops = {
 
 export default function Product({ product }: Productprops) {
   return (
-    <div className='flex flex-col shadow-lg h-96 bg-slate-800 p-5'>
+    <div className='flex flex-col shadow-lg h-96 bg-slate-800 p-5 text-gray-300'>
      
       <div className='relative max-h-72 flex-1'> 
         <ProductImage product={product} fill /> 

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import clsx from 'clsx' //utilizar para agrupar os estilos no body
 import { ClerkProvider } from '@clerk/nextjs' // garante que todas as paginas passem por aqui antes
 import { ptBR } from "@clerk/localizations"; // tradução do menu de loguin
