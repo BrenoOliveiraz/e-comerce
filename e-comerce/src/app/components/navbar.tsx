@@ -1,5 +1,7 @@
+import { SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import React from 'react'
+
 
 export default function Navbar() {
     return (
@@ -13,6 +15,18 @@ export default function Navbar() {
                 next store
 
             </Link>
+
+            <div className='flex items bg-center gap-8'>
+                <SignedIn>
+                    <UserButton/>
+                </SignedIn>
+                <SignedOut>
+                    <SignInButton mode='modal'>
+                    <button className='border rounded-md border-gray-400 px-3 py-2'>Fazer Loguin</button>
+
+                    </SignInButton>
+                </SignedOut>
+            </div>
 
         </nav>
     )
