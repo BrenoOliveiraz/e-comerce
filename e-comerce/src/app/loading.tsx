@@ -1,3 +1,6 @@
+//arquivo reservado para esperar a resposta do servidor
+
+
 import SkeletonCard from "./components/SkeletonCard"
 
 

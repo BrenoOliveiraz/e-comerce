@@ -1,3 +1,7 @@
+
+//função para transformar o preço em real
+
+
 export const formatPrice = (price: number | null) =>{
     if (!price) return "R$ 0,00"
 
